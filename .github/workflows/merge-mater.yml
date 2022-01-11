@@ -1,8 +1,12 @@
 name: Push on master
+
 on:
   push:
     branches:
       - master
+
 jobs:
-  steps:
-    - run: npm version major
+  push-master:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm version major
