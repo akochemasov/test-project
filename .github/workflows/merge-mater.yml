@@ -1,0 +1,8 @@
+name: Push on master
+on:
+  push:
+    branches:
+      - master
+jobs:
+  steps:
+    - run: npm version major
