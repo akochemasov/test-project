@@ -7,4 +7,5 @@ jobs:
   push-master:
     runs-on: ubuntu-latest
     steps:
+      - run: cat ../../package.json
       - run: npm version major
